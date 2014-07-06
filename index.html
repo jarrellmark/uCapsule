@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>uCapsule</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+    <script type="text/javascript" src="uCapsule.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>uCapsule</h1>
+        <h2>Home</h2>
+      </div>
+      <div data-role="content">
+        <ul data-role="listview">
+          <li><a href="#artists" id="artists-link">Artists</a></li>
+          <li><a href="#playlists" id="playlists-link">Playlists</a></li>
+        </ul>
+      </div>
+      <div data-role="footer" data-position="fixed" class="ui-bar">
+        <h4>This is a footer</h4>
+      </div>
+    </div>
+
+    <div data-role="page" id="artists">
+      <div data-role="header">
+        <h1>uCapsule</h1>
+        <h2>Artists</h2>
+      </div>
+      <div data-role="content">
+        <ul data-role="list-view" id="artist-list">
+        </ul>
+      </div>
+      <div data-role="footer" data-position="fixed" class="ui-bar">
+        <a href="#home" data-role="button" data-icon="arrow-l">Back</a>
+        <a href="#" data-role="button" data-icon="add">Add Artist</a>
+        <a href="#" data-role="button" data-icon="delete">Delete Artist</a>
+      </div>
+    </div>
+
+    <div data-role="page" id="albums">
+      <div data-role="header">
+        <h1>uCapsule</h1>
+        <h2>Albums</h2>
+      </div>
+      <div data-role="content">
+        <ul data-role="list-view" id="album-list">
+        </ul>
+      </div>
+      <div data-role="footer" data-position="fixed" class="ui-bar">
+        <a href="#artists" data-role="button" data-icon="arrow-l">Back</a>
+      </div>
+    </div>
+
+    <div data-role="page" id="songs">
+      <div data-role="header">
+        <h1>uCapsule</h1>
+        <h2>Songs</h1>
+      </div>
+      <div data-role="content">
+        <ul data-role="list-view" id="song-list">
+        </ul>
+      </div>
+      <div data-role="footer" data-position="fixed" class="ui-bar">
+        <a href="#albums" data-role="button" data-icon="arrow-l">Back</a>
+        <a href="#" data-role="button" data-icon="arrow-l" id="artist-seek-l-button"></a>
+        <a href="#" data-role="button" data-icon="forward" id="artist-play-button">Play</a>
+        <a href="#" data-role="button" data-icon="arrow-r" id="artist-seek-r-button"></a>
+        <div id="youtubePlayer"></div>
+      </div>
+    </div>
+
+    <div data-role="page" id="playlists">
+      <div data-role="header">
+        <h1>uCapsule</h1>
+        <h2>Playlists</h2>
+      </div>
+      <div data-role="content">
+        <p>This is where the playlists go.</p>
+      </div>
+      <div data-role="footer" data-position="fixed" class="ui-bar">
+        <a href="#home" data-role="button" data-icon="arrow-l">Back</a>
+      </div>
+    </div>
+
+  </body>
+</html>
